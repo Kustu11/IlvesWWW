@@ -1,0 +1,481 @@
+﻿@import url('../common.css');
+
+body, html {
+}
+
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: Black;
+    margin: 0;
+}
+
+.ccmsBody {
+    background: white url('taust2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ccmsBody {
+}
+
+table, td {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    background-color: White;
+    color: Black;
+}
+
+p {
+    margin: 3px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: Black;
+    text-align: justify;
+}
+
+.ccmsButton {
+    background-color: #DCDCDC;
+    color: Black;
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    border: 1px solid;
+}
+
+.ccmsContent {
+    background-color: White;
+    color: Black;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    padding: 5px;
+    font-weight: normal;
+    margin: 3px 5px 10px 5px;
+    overflow-y: hidden;
+}
+
+.ccmsPublic .ccmsContent {
+    margin: 3px 5px 10px 205px;
+}
+
+.ccmsMain {
+    max-width: 1200px;
+    min-width: 750px;
+    margin: 0px auto;
+    min-height: 800px;
+    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+    margin-bottom: 34px;
+    overflow: hidden;
+}
+
+.ccmsSidebar {
+    width: 200px;
+    /*background-color: white;
+    background-color: rgba(255,255,255,0.75);
+    min-height:100px;*/
+    padding: 2px 2px 20px 2px;
+    text-align: center;
+}
+
+    .ccmsSidebar .ccmsTable {
+        margin: 0 auto;
+        background-color: transparent;
+    }
+
+    .ccmsSidebar td {
+        background-color: transparent;
+    }
+
+.left {
+    float: left;
+}
+/*right sidebar is not used*/
+
+.ccmsSidebar.right {
+    display: none;
+}
+
+.right {
+    float: right;
+}
+
+.ccmsHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: Black;
+    /*     position:fixed;
+        top:0px;*/
+    position: relative;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.ccmsBanner {
+    background-image: url('banner.jpg');
+    background-position-x: 525px;
+    /*   position:absolute;*/
+    height: 150px;
+    /*   left:480px;*/
+    /*     width: 100%;*/
+}
+
+.siteTitle {
+    color: #CC6600;
+    margin-left: 150px;
+    *margin-left: 0px;
+    margin-right: 600px;
+    position: absolute;
+    font-size: 40px;
+    min-width: 200px;
+    max-width: 430px;
+    padding: 6px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+    height: 150px;
+    width: 470px;
+    padding-right: 30px;
+    padding-left: 25px;
+    background: white;
+}
+
+.ccmsMenu {
+    float: left;
+    padding: 2px 2px 20px 2px;
+    margin: 0px;
+    width: 200px;
+    background: transparent;
+    background-color: white;
+    background-color: rgba(255,255,255,0.75);
+}
+
+td.ccmsMenu {
+    background-position: center top;
+    background-image: url(menu_back.gif);
+    background-repeat: no-repeat;
+}
+
+
+.ccmsMenuItem {
+    background-color: #DCDCDC;
+    color: Black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border: 2px ridge;
+}
+
+.ccmsSelectedMenu {
+    background-color: #F5F5F5;
+    color: Black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    border: 1px solid #FF003A;
+}
+
+.ccmsFooter {
+    padding: 3px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    height: 28px;
+}
+
+a:visited.ccmsMenuLink, a:link.ccmsMenuLink {
+    color: Black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+a:active.ccmsMenuLink, a:focus.ccmsMenuLink, a:hover.ccmsMenuLink {
+    color: Red;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+/**--veer2--Menu1 */
+
+.ccmsMenuItem1 {
+    background-position: rgb(0, 170, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    border: 1px solid rgb(128, 0, 0);
+    color: #000000;
+    background-color: #DCDCCB;
+}
+
+.ccmsMenuItem1_Selected {
+    background: #DCDCCB url(menusel.gif) right no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    border: 1px solid rgb(128, 0, 0);
+    margin: 0px;
+}
+
+    .ccmsMenuItem1_Selected a:visited, .ccmsMenuItem1_Selected a:link,
+    .ccmsMenuItem1 a:visited, .ccmsMenuItem1 a:link {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(128, 0, 0);
+        display: block;
+        width: 100%;
+    }
+
+    .ccmsMenuItem1_Selected a:active, .ccmsMenuItem1_Selected a:focus, .ccmsMenuItem1_Selected a:hover, .ccmsMenuItem1 a:active, .ccmsMenuItem1 a:focus, .ccmsMenuItem1 a:hover {
+        color: rgb(128, 0, 0);
+        text-decoration: underline;
+        display: block;
+        width: 100%;
+    }
+
+/* MENU, veer2, item2 */
+.ccmsMenuItem2 {
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    padding: 2px 2px 2px 7px;
+    margin: 2px 2px 2px 3px;
+    color: #000000;
+}
+
+.ccmsMenuItem2_Selected {
+    background: transparent url(menusel.gif) right no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    padding: 2px 2px 2px 7px;
+    margin: 2px 2px 2px 3px;
+}
+
+    .ccmsMenuItem2_Selected a:visited, .ccmsMenuItem2_Selected a:link,
+    .ccmsMenuItem2 a:visited, .ccmsMenuItem2 a:link {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(128, 0, 0);
+        display: block;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    .ccmsMenuItem2_Selected a:active, .ccmsMenuItem2_Selected a:focus, .ccmsMenuItem2_Selected a:hover, .ccmsMenuItem2 a:active, .ccmsMenuItem2 a:focus, .ccmsMenuItem2 a:hover {
+        color: rgb(128, 0, 0);
+        text-decoration: underline;
+        display: block;
+        width: 100%;
+        font-weight: 700;
+    }
+
+/* MENU, veer2, item3 */
+.ccmsMenuItem3 {
+    background: transparent;
+    font-size: 10pt;
+    padding: 2px 2px 2px 14px;
+    margin: 2px 2px 2px 3px;
+    color: #000000;
+}
+
+.ccmsMenuItem3_Selected {
+    background: transparent url(menusel.gif) right no-repeat;
+    font-size: 10pt;
+    padding: 2px 2px 2px 14px;
+    margin: 2px 2px 2px 3px;
+}
+
+    .ccmsMenuItem3_Selected a:visited, .ccmsMenuItem3_Selected a:link,
+    .ccmsMenuItem3 a:visited, .ccmsMenuItem3 a:link {
+        text-decoration: none;
+        color: rgb(128, 0, 0);
+        display: block;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .ccmsMenuItem3_Selected a:active, .ccmsMenuItem3_Selected a:focus, .ccmsMenuItem3_Selected a:hover, .ccmsMenuItem3 a:active, .ccmsMenuItem3 a:focus, .ccmsMenuItem3 a:hover {
+        color: rgb(128, 0, 0);
+        text-decoration: underline;
+        display: block;
+        width: 100%;
+        font-weight: 500;
+    }
+
+
+.ccmsHint {
+    background-color: #FFFFE0;
+    padding: 2px 3px 2px 3px;
+    border: 1px solid Gray;
+}
+
+.ccmsTable {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    color: Black;
+}
+
+.ccmsTableHeader {
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px ridge #F5F5F5;
+    font-size: x-small;
+    color: Black;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: #800000;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    color: #800000;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    color: #800000;
+    border-bottom-color: #993300;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #800000;
+    border-bottom-color: #993300;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    color: #800000;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: #CC6600;
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: none;
+    color: #990000;
+}
+
+hr {
+    color: #FF9900;
+}
+
+.news_title {
+    border-width: 0px 0px 1px 0px;
+    color: #800000;
+    font-size: 9pt;
+    font-weight: bold;
+    border-bottom-color: #FF9900;
+    border-bottom-style: solid;
+    cursor: pointer;
+}
+
+.tekstgrupp {
+    margin: 5px;
+    padding: 3px;
+    background-color: transparent;
+    width: 95%;
+    font-size: 8pt;
+    border: 1px solid #F5F5F5;
+    display: block;
+}
+
+.calDate {
+    background-color: White;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 8pt;
+    text-decoration: none;
+}
+
+.calDateSelect {
+    background-color: #FF4500;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 8pt;
+    text-decoration: none;
+}
+
+ul {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+    ul li {
+        padding-left: 15px;
+        background-image: url(bull1.gif);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+.ccmsInfoRow {
+    font-size: 10pt;
+    color: gray;
+}
+
+.ccmsTableCellText {
+    margin: 5px;
+}
+
+ul.dok {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    list-style: none;
+    margin-left: 2;
+    padding-left: 0;
+}
+
+    ul.dok li {
+        padding-left: 15px;
+        background-image: url(dok.gif);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+.info {
+    padding: 5px;
+    margin: 5px;
+    background-color: #FFF7D5;
+}
+
+br {
+    clear: none;
+}
+
+a.osport-entry-button {
+    color: white;
+}
+
+#osportWidget, .osportWidget {
+    margin: 5px;
+    display: block;
+}
