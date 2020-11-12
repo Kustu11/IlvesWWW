@@ -32,9 +32,35 @@
     max-width: 1200px;
     min-width: 750px;
     margin: 0px auto;
-    min-height: 800px;
+    min-height: 1440px;
     background-color: white;
     background-color: rgba(255,255,255,0.75);
     margin-bottom: 34px;
     overflow: hidden;
+}
+.body {
+    /*background: white url('taust_uus.jpg') no-repeat center center fixed;*/
+    background-color: whitesmoke;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.menu {
+    border: 300 px;
+}
+.header {
+    height: 100px;
+}
+
+.jutuaken{
+    height: 600px;
+    width: 800px;
+    border-width: 5px;
+    border-color: orange;
+    border-style: solid;
+    float: right;
+}
+.events{
+    
 }
