@@ -21,5 +21,5 @@ Vahelehed valisime selle järgi, mis on kõige vajalikumad päevakute korraldaja
 * Päevakute leht - Raiko
 * JavaScript - Raiko
 
-__Iga vahelehe enda CSS-i kirjutas vastav tiimi liige__
-__Kuna JavaScripti kasutab ainult üks vaheleht, ei ole meil ühist/teiste lehtede javascripti faile__
+_Iga vahelehe enda CSS-i kirjutas vastav tiimi liige_
+_Kuna JavaScripti kasutab ainult üks vaheleht, ei ole meil ühist/teiste lehtede javascripti faile_
