@@ -5,7 +5,14 @@
     <META name="description" content="Orienteerumisklubi Ilves koduleht - Orienteering Club ILVES homepage">
     <link href="skin/paevakud_style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="skin/common.css" type="text/css">ˇ
-    <script type="text/javascript" src="https://www.okilves.ee/_js/common.js" ></script>
+    <SCRIPT src="_js/uuskaart.js" type="text/javascript"></SCRIPT>
+    <!-- Järgmised kaks uue kaardi jaoks-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
     <TITLE>OK Ilves</TITLE>
 </head>
 <body>
@@ -23,20 +30,16 @@
                     <a href="meist.html">MEIST</a>
                 </div>
             </div>
-
-            <div>          
+          
             <div class="paevakud">
                 <h1>Tartu Orienteerumispäevakud</h1>
                 
-                <div>
-                    <!-- siin üldjuhend -->
-                </div>
                 <div>   
                     <h3>Järgmine päevak:</h3>
                 </div>
                 <div>
                     <h3>Kalender ja tulemused</h3>
-                    <!-- PÄEVAKU TABEL -->
+                    <!-- PÄEVAKUTE TABEL -->
                     <br clear="all">
                     <div class="shsTabel">
                         <div class="shsKalenderRaam shsToimunud">
@@ -61,19 +64,17 @@
                                     <li class="grph"><a href="http://www.okilves.ee/RG/cgi-bin/reitti.cgi?act=splitsbrowserjs&id=377" target="tulemus" title="Tulemuste graafikud">Graafik</a></li>
                                     <li class="route"><a href="http://okilves.ee/RG/cgi-bin/reitti.cgi?act=map&id=377&kieli=" target="tulemus" title="Teekondade joonistamine">Teekonnad</a></li>
                                     <li class="map"><a href="/paevakud/2020/Vooremäe rada.Kõik punktid.jpg" target="tulemus" title="Kaardi näidis">Kaart</a></li>
-                                    <li class="infot"><a onclick="TINY.box.show({html:'<p><a href=&quot;/paevakud/2020/lisainfo/index.php&quot;>Lisainfo</a></p>',fixed:false,animate:0});">Info</a></li>
+                                    <li class="infot"><a href="/paevakud/2020/lisainfo/index.php",target="tulemus" title="Lisainfo">Info</a></li>
                                 </ul>
+                                </div>
                             </div>
                         </div>
                 </div>
-                <div>
-                    <!--KAART-->
-                    <div id="SHSKaart" class="oBingMap">
-                    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
-                    <script type="text/javascript"> var Opins=[];Opins[0]=new Array(58.283917,26.894074,'1. Tartu neljapäevak','02.07.','Vooremägi');Opins[1]=new Array(58.649461,26.778498,'2. Tartu neljapäevak','09.07.','Saare');Opins[2]=new Array(58.091656,26.424074,'3. Tartu neljapäevak','16.07.','Kirikuküla (N)');Opins[3]=new Array(58.038871,26.425654,'4. Tartu neljapäevak','23.07.','Annimatsi');Opins[4]=new Array(58.642745,26.914667,'5. Tartu neljapäevak','30.07.','Sõõru');Opins[5]=new Array(58.656831,26.844715,'6. Tartu neljapäevak','06.08.','Kaiu');Opins[6]=new Array(58.221295,26.406856,'7. Tartu neljapäevak','14.08.','Elva linn');Opins[7]=new Array(58.253608,26.950354,'8. Tartu neljapäevak','20.08.','Uniküla (S)');Opins[8]=new Array(58.593104,26.865999,'9. Tartu neljapäevak','27.08.','Välgi');Opins[9]=new Array(58.206454,26.424849,'10. Tartu neljapäevak','03.09.','Tartumaa Tervisespordikeskus');Opins[10]=new Array(58.083470,26.425426,'11. Tartu neljapäevak','10.09.','Kirikuküla (S)');Opins[11]=new Array(58.173684,26.418180,'12. Tartu neljapäevak','17.09.','Vitipalu-Illipalu');Opins[12]=new Array(58.591807,26.950689,'13. Tartu neljapäevak ','24.09.','Kärgandi mäed');Opins[13]=new Array(58.053375,26.501964,'14. Tartu neljapäevak','01.10.','Tehvandi Nüpli');Opins[14]=new Array(58.165775,26.418758,'15. Tartu neljapäevak','08.10.','Vitipalu');showOMap( 58.5970, 24.9280, 7, Opins, 'SHSKaart', 'https://www.okilves.ee/_skin/ve_start.png');</script><!-- SISU LOPP -->
-                    </div>
-                </div>
-
+            </div>
+            <!-- SIIN ON UUS KAART-->
+            <div class ="paevakud">
+            <div id="mapid"></div>
+            <script src="_js\uuskaart.js"></script>
             </div>
             <div class="sponsorid">
                 <a class="tstyle sponsor" href="https://t-style.ee/"></a>

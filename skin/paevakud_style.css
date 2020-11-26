@@ -5,7 +5,11 @@
     display: block;
     position: relative;
 }
-
+#mapid {
+    max-width: 1200px;
+    min-width: 800px;
+    height: 600px;
+}
 /*SHS kalendrid (uued)*/
 .shsKalenderRaam {
     background: #fff;
@@ -21,7 +25,6 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     font-size: 11pt;
     display: inline-block;
-    width: 98%;
     line-height: 1em;
 }
 
@@ -48,7 +51,6 @@
 
 .shsKuup {
     float: left;
-    display: inline-block;
     margin: 2px 5px 2px 2px;
     vertical-align: central;
 }
