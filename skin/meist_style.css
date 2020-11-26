@@ -1,0 +1,13 @@
+.info{
+    float: right;
+    padding-right: 5px;
+} 
+.klubist{
+    float: left;
+    width: 560px;
+}
+.liikmed{
+    width: 540px;
+    float: left;
+    padding-bottom: 15px;
+}

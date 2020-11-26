@@ -1,38 +1,27 @@
 .jutuaken{
-
-    /*height: 600px;
-    border-width: 5px;
-    border-color: orange;
-    border-style: solid;
-    float: right;*/
     padding-left: 15px;
     display: block;
-
 }
 
-
 .ajalugu{
-    /*max-width: 800px;
-    min-width: 400px;
-    height: 600px;
-    border-width: 5px;
-    border-color: orange;
-    border-style: solid;
-    float: right;*/
     padding-left: 15px;
 }
 .tstyle{
     background-image: url(tstyle.png);
 }
-
+.kulka{
+    background-image: url(kulka_logo.jpg);
+}
+.tartu_linn{
+    background-image: url(tartu_logo.jpg);
+}
+.sponsorgrid h2{
+    padding-left:15px
+}
 .sponsorid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5rem 2rem;
-
-    /*border-width: 5px;
-    border-color: orange;
-    border-style: solid;*/
+    gap: 0.5rem 2rem;
     padding-left: 15px;
 }
 .sponsor{
