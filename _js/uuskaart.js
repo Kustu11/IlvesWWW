@@ -17,8 +17,8 @@ function kaart() {
     }).addTo(mymap);
     //teeb kindla ikooni standartse asemel, veel implementeerimata
     var myIcon = L.icon({
-        iconUrl: 'skin\tahis_il.png',
-        iconSize: [104, 104],
+        iconUrl: 'skin/tahis_il.png',
+        iconSize: [20, 20],
         iconAnchor: [22, 94],
         popupAnchor: [-3, -76],
     });
