@@ -5,6 +5,7 @@
 .klubist{
     float: left;
     width: 560px;
+    padding-bottom: 15px;
 }
 .liikmed{
     width: 540px;
