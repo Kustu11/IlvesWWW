@@ -73,6 +73,9 @@ ul li {
     border-width: 1px;
     border-color: rgb(0, 0, 0);
     border-style: solid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-style: none;
 }
 
 body{
