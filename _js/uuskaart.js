@@ -26,4 +26,5 @@ function kaart() {
     var Opins = [];
     Opins[0] = L.marker([58.283917, 26.894074]).bindPopup("1. Tartu päevak <br> 02.07 <br> Vooremägi").openPopup().addTo(mymap);
     Opins[1] = L.marker([58.649461, 26.778498]).bindPopup("2. Tartu päevak <br> 09.07 <br> Kärgandi").openPopup().addTo(mymap);
+    Opins[0] = L.marker([58.1697167, 26.3423366]).bindPopup("3. Tartu päevak <br> 08.10 <br> Vitipalu").openPopup().addTo(mymap);
 }

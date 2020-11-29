@@ -11,12 +11,18 @@
 #mapid {
     max-width: 1200px;
     min-width: 800px;
+    padding: 2px;
+    margin: 2px;
     height: 600px;
+    vertical-align: central;
     padding-bottom: 10px;
 
 }
 .KalenderRaam {
     background: #fff;
+    width: 99%;
+    padding: 2px;
+    margin: 2px;
     border: 1px solid #fff;
     border-radius: 5px;
     box-shadow: #8b8b8b 0px 0px 5px inset;
@@ -33,7 +39,7 @@
 }
 
 .Tana {
-    background-color: #FCE4BC;
+    background-color:#e4d1d1;
 }
 
 .Pais {

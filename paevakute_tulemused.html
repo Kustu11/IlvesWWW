@@ -5,8 +5,8 @@
     <META name="description" content="Orienteerumisklubi Ilves koduleht - Orienteering Club ILVES homepage">
     <link href="skin/paevakud_style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="skin/common.css" type="text/css">
+    <!-- Järgmised kolm kaardi jaoks-->
     <SCRIPT src="_js/uuskaart.js"></SCRIPT>
-    <!-- Järgmised kaks uue kaardi jaoks-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
@@ -36,39 +36,90 @@
                 
                 <div>   
                     <h3>Järgmine päevak:</h3>
+                    <div class="Tabel">
+                        <div class="KalenderRaam Tana">
+                            <div class="Pais">
+                                <div class="Kuup">
+                                    8. oktoober <span class="Kell">15:30</span>
+                                </div>
+                                <div class="Pealkiri">
+                                    3. Tartu neljapäevak 
+                                    <span class="Koht">Vitipalu</span>
+                                </div>
+                            </div>
+                            <div class="Sisu">
+                                <div class="Info">Korraldaja:OK Ilves</div>
+                                <div class="Info">Rajameister:Kenny Kivikas </div>
+                                <div class="Info">Kaart:<a href="http://www.orienteerumine.ee/kaart/kaartshow.php?Kood=2018030" target="kaart">2018030</a></div>
+                            </div>
+                            <div class="Tulemused"><ul>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1Srtiki2cCTGFsCcVY57RpQmb_mOdAjYg&usp=sharing" target="_blank" title="Asukoht">Asukoht</a></li>
+                                <li><a href="https://www.okilves.ee/paevakud/2020/lisainfo/Lisainfo1008.pdf" target="_blank" title="Lisainfo">Info</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
                 </div>
                 <div>
-                    <h3>Kalender ja tulemused</h3>
+                    <h3>Kalender ja tulemused:</h3>
                     <!-- PÄEVAKUTE TABEL -->
                     <!-- <br clear="all"> -->
-                    <br>
                     <div class="Tabel">
                         <div class="KalenderRaam Toimunud">
                             <div class="Pais">
                                 <div class="Kuup">
-                                    02.juuli <span class="Kell">16:00</span></div>
+                                    02.juuli <span class="Kell">16:00</span>
+                                </div>
                                     <div class="Pealkiri">
                                         1. Tartu neljapäevak 
                                         <span class="Koht">Vooremägi</span>
                                     </div>
-                                </div>
-                                <div class="Sisu">
-                                    <div class="Info">Korraldaja:OK Ilves</div>
-                                    <div class="Info">Rajameister:Sven Oras</div>
-                                    <div class="Info">Kaart:<a href="http://www.orienteerumine.ee/kaart/kaartshow.php?Kood=2018025" target="kaart">2018025</a>
-                                    </div>
-                                </div>
-                                <div class="Tulemused"><ul>
-                                    <li><a href="http://www.okilves.ee/paevakud/2020/results0702.htm" target="_blank" title="Tulemused">Tulemused (183)</a></li>
-                                    <li><a href="http://www.okilves.ee/paevakud/2020/splits0702.htm" target="_blank" title="Vaheaegade tabel">Vaheajad</a></li>
-                                    <li><a href="http://www.okilves.ee/RG/cgi-bin/reitti.cgi?act=splitsbrowserjs&id=377" target="_blank" title="Tulemuste graafikud">Graafik</a></li>
-                                    <li><a href="http://okilves.ee/RG/cgi-bin/reitti.cgi?act=map&id=377&kieli=" target="_blank" title="Teekondade joonistamine">Teekonnad</a></li>
-                                    <li><a href="https://www.okilves.ee/paevakud/2020/Voorem%C3%A4e%20rada.K%C3%B5ik%20punktid.jpg" target="_blank" title="Kaardi näidis">Kaart</a></li>
-                                    <li><a href="http://www.okilves.ee/paevakud/2020/lisainfo/index.php" target="_blank" title="Lisainfo">Info</a></li>
-                                </ul>
-                                </div>
+                            </div>
+                            <div class="Sisu">
+                                <div class="Info">Korraldaja:OK Ilves</div>
+                                <div class="Info">Rajameister:Sven Oras</div>
+                                <div class="Info">Kaart:<a href="http://www.orienteerumine.ee/kaart/kaartshow.php?Kood=2018025" target="kaart">2018025</a></div>
+                            </div>
+                            <div class="Tulemused"><ul>
+                                <li><a href="http://www.okilves.ee/paevakud/2020/results0702.htm" target="_blank" title="Tulemused">Tulemused (183)</a></li>
+                                <li><a href="http://www.okilves.ee/paevakud/2020/splits0702.htm" target="_blank" title="Vaheaegade tabel">Vaheajad</a></li>
+                                <li><a href="http://www.okilves.ee/RG/cgi-bin/reitti.cgi?act=splitsbrowserjs&id=377" target="_blank" title="Tulemuste graafikud">Graafik</a></li>
+                                <li><a href="http://okilves.ee/RG/cgi-bin/reitti.cgi?act=map&id=377&kieli=" target="_blank" title="Teekondade joonistamine">Teekonnad</a></li>
+                                <li><a href="https://www.okilves.ee/paevakud/2020/Voorem%C3%A4e%20rada.K%C3%B5ik%20punktid.jpg" target="_blank" title="Kaardi näidis">Kaart</a></li>
+                                <li><a href="http://www.okilves.ee/paevakud/2020/lisainfo/index.php" target="_blank" title="Lisainfo">Info</a></li>
+                            </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="Tabel">
+                        <div class="KalenderRaam Toimunud">
+                            <div class="Pais">
+                                <div class="Kuup">
+                                    09.juuli <span class="Kell">16:00</span>
+                                </div>
+                                <div class="Pealkiri">
+                                    2. Tartu neljapäevak 
+                                    <span class="Koht">Saare</span>
+                                </div>
+                            </div>
+                            <div class="Sisu">
+                                <div class="Info">Korraldaja:OK Ilves</div>
+                                <div class="Info">Rajameister:Kaarel Hendrik Zernant</div>
+                                <div class="Info">Kaart:<a href="http://www.orienteerumine.ee/kaart/kaartshow.php?Kood=2012012" target="kaart">2012012</a></div>
+                            </div>
+                            <div class="Tulemused"><ul>
+                                <li><a href="https://okilves.ee/paevakud/2020/results0709.htm" target="_blank" title="Tulemused">Tulemused (130)</a></li>
+                                <li><a href="http://www.okilves.ee/paevakud/2020/splits0709.htm" target="_blank" title="Vaheaegade tabel">Vaheajad</a></li>
+                                <li><a href="http://www.okilves.ee/RG/cgi-bin/reitti.cgi?act=splitsbrowserjs&id=378" target="_blank" title="Tulemuste graafikud">Graafik</a></li>
+                                <li><a href="http://okilves.ee/RG/cgi-bin/reitti.cgi?act=map&id=378&kieli=" target="_blank" title="Teekondade joonistamine">Teekonnad</a></li>
+                                <li><a href="https://okilves.ee/paevakud/2020/Saare%20K%C3%B5ik%20punktid.jpg" target="_blank" title="Kaardi näidis">Kaart</a></li>
+                                <li><a href="https://www.google.com/maps/d/edit?mid=1_ZoWJL2iISQJXDYL27m-A_gbOGNbRzn4&usp=sharing" target="_blank" title="Asukoht">Asukoht</a></li>
+                                <li><a href="http://www.okilves.ee/paevakud/2020/lisainfo/Pa%CC%88evaku%20lisainfo%2009.07.2020%20Saare.docx.pdf" target="_blank" title="Lisainfo">Info</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
             <!-- SIIN ON UUS KAART-->
