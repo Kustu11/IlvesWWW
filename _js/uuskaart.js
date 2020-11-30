@@ -18,7 +18,7 @@ function kaart() {
     //teeb kindla ikooni standartse asemel, veel implementeerimata
     var myIcon = L.icon({
         iconUrl: 'skin/tahis_kaart_transparent.png',
-        iconSize: [20, 20],
+        iconSize: [20, 30],
         iconAnchor: [10,20],
         popupAnchor: [0,-20],
     });
