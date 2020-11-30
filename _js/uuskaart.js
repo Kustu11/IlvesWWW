@@ -19,8 +19,8 @@ function kaart() {
     var myIcon = L.icon({
         iconUrl: 'skin/tahis_kaart_transparent.png',
         iconSize: [20, 30],
-        iconAnchor: [10,20],
-        popupAnchor: [0,-20],
+        iconAnchor: [10,30],
+        popupAnchor: [0,-30],
     });
     //loenduvad markerid serveri ühilduvuse jaoks
     var Opins = [];
