@@ -17,14 +17,14 @@ function kaart() {
     }).addTo(mymap);
     //teeb kindla ikooni standartse asemel, veel implementeerimata
     var myIcon = L.icon({
-        iconUrl: 'skin/tahis_il.png',
+        iconUrl: 'skin/tahis_kaart_transparent.png',
         iconSize: [20, 20],
-        iconAnchor: [22, 94],
-        popupAnchor: [-3, -76],
+        iconAnchor: [10,20],
+        popupAnchor: [0,-20],
     });
     //loenduvad markerid serveri ühilduvuse jaoks
     var Opins = [];
-    Opins[0] = L.marker([58.283917, 26.894074]).bindPopup("1. Tartu päevak <br> 02.07 <br> Vooremägi").openPopup().addTo(mymap);
-    Opins[1] = L.marker([58.649461, 26.778498]).bindPopup("2. Tartu päevak <br> 09.07 <br> Kärgandi").openPopup().addTo(mymap);
-    Opins[0] = L.marker([58.1697167, 26.3423366]).bindPopup("3. Tartu päevak <br> 08.10 <br> Vitipalu").openPopup().addTo(mymap);
+    Opins[0] = L.marker([58.283917, 26.894074], {icon: myIcon}).bindPopup("1. Tartu päevak <br> 02.07 <br> Vooremägi").openPopup().addTo(mymap);
+    Opins[1] = L.marker([58.650581, 26.780543], {icon: myIcon}).bindPopup("2. Tartu päevak <br> 09.07 <br> Saare").openPopup().addTo(mymap);
+    Opins[2] = L.marker([58.168966, 26.414737], {icon: myIcon}).bindPopup("3. Tartu päevak <br> 08.10 <br> Vitipalu").openPopup().addTo(mymap);
 }
