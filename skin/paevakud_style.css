@@ -1,0 +1,123 @@
+.paevakud{
+    /* border-width: 5px;
+    border-color: orange;
+    border-style: solid; */
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+#mapid {
+    max-width: 1200px;
+    min-width: 800px;
+    padding: 2px;
+    margin: 2px;
+    height: 600px;
+    vertical-align: central;
+    padding-bottom: 10px;
+
+}
+.KalenderRaam {
+    background: #fff;
+    width: 99%;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: #8b8b8b 0px 0px 5px inset;
+    padding: 3px;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 11pt;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.Toimunud {
+    background-color: #D1E4DE;
+}
+
+.Tana {
+    background-color:#e4d1d1;
+}
+
+.Pais {
+    width: 99%;
+    padding: 2px;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: central;
+}
+
+.Kell {
+    color: #717171;
+    font-size: 8pt;
+}
+
+.Kuup {
+    float: left;
+    margin: 2px 5px 2px 2px;
+    vertical-align: central;
+}
+
+.Pealkiri {
+    float: left;
+    width: 79%;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.Koht {
+    font-weight: normal;
+    color: #5C5C5C;
+    margin: 2px 5px 2px 2px;
+    vertical-align: central;
+}
+
+.Sisu {
+    margin: 2px;
+    float: left;
+    width: 99%;
+    vertical-align: text-top;
+}
+
+.Info {
+    margin: 2px 7px 2px 2px;
+    float: left;
+}
+
+.Tulemused {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+    .Tulemused ul {
+        padding: 0px;
+        margin: 3px 2px 4px 2px;
+        list-style-type: none;
+    }
+
+        .Tulemused ul li {
+            display: inline;
+            float: left;
+            margin: 5px;
+            padding-top: 5px;
+            padding-left: 35px;
+
+        }
+
+            .Tulemused ul li a {
+                margin: 2px;
+                border-radius: 3px;
+                padding: .1em 1em;
+                background-color: #a56d05;
+                color: #fff;
+                text-decoration: none;
+            }
+
+                .Tulemused ul li a:hover {
+                    background-color: #333333;
+                    color: #fff;
+                }
