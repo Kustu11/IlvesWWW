@@ -17,6 +17,12 @@ ul li {
     background-repeat: no-repeat;
     background-position: 10px 4px;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Aino-headline';
+}
+h2{
+    font-size: 42px;
+}
 .footer{
 	padding: 0px;
 	width: 100%;
@@ -38,8 +44,8 @@ ul li {
 
 .top_nav {
     overflow: hidden;
-    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  }
+    font-family: 'Aino-headline';
+}
 
 .top_nav a {
     float: left;
@@ -80,16 +86,34 @@ ul li {
 }
 
 body{
-    margin:0
+    margin:0;
+    font-family: 'Aino-regular';
+}
+
+.layer {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 98vh;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.info_jalus{
+    display: block;
+    position: relative;
+    bottom: 0;
+    min-width: 500px;
 }
 
 .keha {
     background: url(VITIPALU_WOC2017_taustaks.svg) no-repeat center center;
-    background-color: whitesmoke;
+    /*    background-color: rgba(245, 245, 245, 0.92);*/
     background-size: cover;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     min-height: 98vh;
-    padding-bottom: 100px;
 }
 
 @media screen and (max-height:1080px){
@@ -110,12 +134,29 @@ body{
     height: 100px;
 }
 .rida{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-family: 'Aino-regular';
     float: left;
-    width: 250px;
+    width: 270px;
     padding-left: 30px;
     padding-bottom: 20px;
     font-size: 17px;
 
     display: block;
     position: relative;}
+.rida h1 {
+    font-size: 32px;
+}
+
+@font-face {
+    font-family: 'Aino-regular';
+    src: url("Aino_31_170411-Regular.woff2") format('woff2');
+}
+@font-face {
+    font-family: 'Aino-bold';
+    src: url("Aino_31_170411-Bold.woff2") format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Aino-headline';
+    src: url("Aino-headline.woff2") format('woff2');
+}

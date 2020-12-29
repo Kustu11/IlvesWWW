@@ -5,14 +5,16 @@
     <META name="description" content="Orienteerumisklubi Ilves koduleht - Orienteering Club ILVES homepage">
     <link href="skin/paevakud_style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="skin/common.css" type="text/css">
+    <SCRIPT src="_js/common.js"></SCRIPT>
     <!-- Järgmised kolm kaardi jaoks-->
-    <SCRIPT src="_js/uuskaart.js"></SCRIPT>
+<!--    <SCRIPT src="_js/uuskaart.js"></SCRIPT>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+   crossorigin=""></script>-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
    <link rel="icon" href="skin/tahis_il.png">
     <TITLE>OK Ilves</TITLE>
 </head>
@@ -122,8 +124,114 @@
             </div>
             <!-- SIIN ON UUS KAART-->
             <div class ="paevakud">
+<!--
+<div id="SHSKaart" class="oBingMap leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="outline: none;">
+    <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-41px, 28px, 0px);"><div class="leaflet-pane leaflet-tile-pane">
+        <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+            <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 15; transform: translate3d(8px, 7px, 0px) scale(1);">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/72/38.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(269px, 187px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/72/37.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(269px, -69px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/73/38.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(525px, 187px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/73/37.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(525px, -69px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/71/37.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(13px, -69px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/74/37.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(781px, -69px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/71/38.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(13px, 187px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/74/38.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(781px, 187px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/72/39.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(269px, 443px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/71/39.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(13px, 443px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/73/39.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(525px, 443px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/70/38.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-243px, 187px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/70/37.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-243px, -69px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/70/39.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-243px, 443px, 0px); opacity: 1;">
+                <img alt="" role="presentation" src="https://okaart.osport.ee/7/74/39.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(781px, 443px, 0px); opacity: 1;">
+            </div>
+            <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 13; transform: translate3d(496px, 157px, 0px) scale(0.25);">
+            </div>
+        </div>
+    </div>
+        <div class="leaflet-pane leaflet-shadow-pane">
+        </div>
+        <div class="leaflet-pane leaflet-overlay-pane">
+        </div>
+        <div class="leaflet-pane leaflet-marker-pane">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="1. Tartu neljapäevak
+02.07.
+Vooremägi" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(677px, 286px, 0px); z-index: 286;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="2. Tartu neljapäevak
+09.07.
+Saare" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(666px, 223px, 0px); z-index: 223;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="3. Tartu neljapäevak
+16.07.
+Kirikuküla (N)" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 320px, 0px); z-index: 320;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="4. Tartu neljapäevak
+23.07.
+Annimatsi" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 329px, 0px); z-index: 329;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="5. Tartu neljapäevak
+30.07.
+Sõõru" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(679px, 224px, 0px); z-index: 224;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="6. Tartu neljapäevak
+06.08.
+Kaiu" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(672px, 222px, 0px); z-index: 222;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="7. Tartu neljapäevak
+14.08.
+Elva linn" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(633px, 297px, 0px); z-index: 297;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="8. Tartu neljapäevak
+20.08.
+Uniküla (S)" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(682px, 292px, 0px); z-index: 292;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="9. Tartu neljapäevak
+27.08.
+Välgi" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(674px, 233px, 0px); z-index: 233;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="10. Tartu neljapäevak
+03.09.
+Tartumaa Tervisespordikeskus" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 300px, 0px); z-index: 300;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="11. Tartu neljapäevak
+10.09.
+Kirikuküla (S)" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 321px, 0px); z-index: 321;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="12. Tartu neljapäevak
+17.09.
+Vitipalu-Illipalu" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 305px, 0px); z-index: 305;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="13. Tartu neljapäevak
+24.09.
+Kärgandi mäed" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(682px, 233px, 0px); z-index: 233;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="14. Tartu neljapäevak
+01.10.
+Tehvandi Nüpli" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(641px, 326px, 0px); z-index: 326;">
+            <img src="https://www.okilves.ee/_skin/ve_start.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" title="15. Tartu neljapäevak
+08.10.
+Vitipalu" alt="" tabindex="0" style="margin-left: -12px; margin-top: -24px; width: 25px; height: 25px; transform: translate3d(634px, 307px, 0px); z-index: 307;">
+        </div>
+        <div class="leaflet-pane leaflet-tooltip-pane"></div>
+        <div class="leaflet-pane leaflet-popup-pane"></div>
+        <div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(18686px, 9731px, 0px) scale(64);"></div>
+    </div>
+    <div class="leaflet-control-container">
+        <div class="leaflet-top leaflet-left">
+            <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+                <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+                <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+            </div>
+        </div>
+        <div class="leaflet-top leaflet-right"></div>
+        <div class="leaflet-bottom leaflet-left"></div>
+        <div class="leaflet-bottom leaflet-right">
+            <div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>
+                | it:<a href="https://okaart.osport.ee">osport.ee</a> <span id="infBtn">Teave</span></div></div></div></div>
+
+                <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+
+                <script type="text/javascript"> var Opins=[];Opins[0]=[58.283917,26.894074,'1. Tartu neljapäevak','02.07.','Vooremägi'];Opins[1]=[58.649461,26.778498,'2. Tartu neljapäevak','09.07.','Saare'];Opins[2]=new Array(58.091656,26.424074,'3. Tartu neljapäevak','16.07.','Kirikuküla (N)');Opins[3]=new Array(58.038871,26.425654,'4. Tartu neljapäevak','23.07.','Annimatsi');Opins[4]=new Array(58.642745,26.914667,'5. Tartu neljapäevak','30.07.','Sõõru');Opins[5]=new Array(58.656831,26.844715,'6. Tartu neljapäevak','06.08.','Kaiu');Opins[6]=new Array(58.221295,26.406856,'7. Tartu neljapäevak','14.08.','Elva linn');Opins[7]=new Array(58.253608,26.950354,'8. Tartu neljapäevak','20.08.','Uniküla (S)');Opins[8]=new Array(58.593104,26.865999,'9. Tartu neljapäevak','27.08.','Välgi');Opins[9]=new Array(58.206454,26.424849,'10. Tartu neljapäevak','03.09.','Tartumaa Tervisespordikeskus');Opins[10]=new Array(58.083470,26.425426,'11. Tartu neljapäevak','10.09.','Kirikuküla (S)');Opins[11]=new Array(58.173684,26.418180,'12. Tartu neljapäevak','17.09.','Vitipalu-Illipalu');Opins[12]=new Array(58.591807,26.950689,'13. Tartu neljapäevak ','24.09.','Kärgandi mäed');Opins[13]=new Array(58.053375,26.501964,'14. Tartu neljapäevak','01.10.','Tehvandi Nüpli');Opins[14]=new Array(58.165775,26.418758,'15. Tartu neljapäevak','08.10.','Vitipalu');showOMap( 58.5970, 24.9280, 7, Opins, 'SHSKaart', 'https://www.okilves.ee/_skin/ve_start.png');</script>
+
+
+-->
+
+                <div id="SHSKaart" class="oBingMap">
+                    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+                    <script type="text/javascript"> var Opins=[];Opins[0]=new Array(58.283917,26.894074,'1. Tartu neljapäevak','02.07.','Vooremägi');Opins[1]=new Array(58.649461,26.778498,'2. Tartu neljapäevak','09.07.','Saare');Opins[2]=new Array(58.091656,26.424074,'3. Tartu neljapäevak','16.07.','Kirikuküla (N)');Opins[3]=new Array(58.038871,26.425654,'4. Tartu neljapäevak','23.07.','Annimatsi');Opins[4]=new Array(58.642745,26.914667,'5. Tartu neljapäevak','30.07.','Sõõru');Opins[5]=new Array(58.656831,26.844715,'6. Tartu neljapäevak','06.08.','Kaiu');Opins[6]=new Array(58.221295,26.406856,'7. Tartu neljapäevak','14.08.','Elva linn');Opins[7]=new Array(58.253608,26.950354,'8. Tartu neljapäevak','20.08.','Uniküla (S)');Opins[8]=new Array(58.593104,26.865999,'9. Tartu neljapäevak','27.08.','Välgi');Opins[9]=new Array(58.206454,26.424849,'10. Tartu neljapäevak','03.09.','Tartumaa Tervisespordikeskus');Opins[10]=new Array(58.083470,26.425426,'11. Tartu neljapäevak','10.09.','Kirikuküla (S)');Opins[11]=new Array(58.173684,26.418180,'12. Tartu neljapäevak','17.09.','Vitipalu-Illipalu');Opins[12]=new Array(58.591807,26.950689,'13. Tartu neljapäevak ','24.09.','Kärgandi mäed');Opins[13]=new Array(58.053375,26.501964,'14. Tartu neljapäevak','01.10.','Tehvandi Nüpli');Opins[14]=new Array(58.165775,26.418758,'15. Tartu neljapäevak','08.10.','Vitipalu');showOMap( 58.5970, 24.9280, 7, Opins, 'SHSKaart', 'https://www.okilves.ee/_skin/ve_start.png');</script><!-- SISU LOPP -->
+                </div>
+
+<!--            <div class ="paevakud">
             <div id="mapid"></div>
-            <script src="_js/uuskaart.js"></script>
+            <script src="_js/uuskaart.js"></script>-->
             </div>
             <div class="sponsorid">
                 <a class="tstyle sponsor" href="https://t-style.ee/"></a>
