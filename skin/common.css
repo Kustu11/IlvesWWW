@@ -114,6 +114,7 @@ body{
     /*    background-color: rgba(245, 245, 245, 0.92);*/
     background-size: cover;
     min-height: 98vh;
+    font-family: 'Aino-regular';
 }
 
 @media screen and (max-height:1080px){
@@ -158,5 +159,5 @@ body{
 }
 @font-face {
     font-family: 'Aino-headline';
-    src: url("Aino-headline.woff2") format('woff2');
+    src: url("Aino-Headline.woff2") format('woff2');
 }
