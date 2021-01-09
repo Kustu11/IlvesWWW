@@ -1,17 +1,77 @@
 .info{
     float: right;
     padding-right: 5px;
-} 
+    position: relative;
+}
+
+.paremal {
+    width: 100%;
+    padding-left: 15px;
+    display: block;
+    float: right;
+    position: relative;
+    min-width: 635px;
+}
+.menu {
+    padding-top: 50px;
+}
+
 .klubist{
     float: left;
     width: 560px;
     padding-bottom: 15px;
+    position: relative;
 }
 .liikmed{
     width: 540px;
     float: left;
     padding-bottom: 15px;
+    position: relative;
 }
+.info h2 {
+    font-size: 26px;
+}
+@media (max-width: 1240px) {
+    .menu {
+        padding-top: 150px;
+    }
+
+    .rida {
+        margin-right: 0;}
+
+    .rida {
+
+        margin: 0 auto;
+        padding-top: 50px;
+        left: 10%;
+    }
+    .klubist {
+        padding-left: 25px;
+    }
+
+}
+@media (max-width: 957px) {
+    .info {
+        left: -30%;
+    }
+    .klubist {
+        left: 10%;
+        padding-left: 25px;
+
+    }
+}
+
+/*@media all and (max-width: 800px) {
+    .keha {
+        display:flex;
+        flex-flow: column;
+    }
+    .logo { order: 4;}
+    .menu { order: 2;}
+    .paremal { order: 3;}
+    .rida {order: 1;}
+
+}*/
 
 /* .main {
     overflow: hidden;

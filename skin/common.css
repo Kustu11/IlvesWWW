@@ -3,6 +3,31 @@
     font-size: medium;
     color: #d2d2d2;
 }
+.menu {
+    /*padding-top: 100px;*/
+}
+.algusmenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem 2rem;
+    padding-bottom: 20px;
+}
+
+
+@media all and  (max-width: 1210px) {
+    .menu {
+        padding-top: 150px;
+        margin-right: 0;
+        max-width: 0;
+    }
+}
+*, ::after, ::before {
+    box-sizing: unset;
+}
+
+a {
+    color: black;
+}
 
 ul {
     margin-left: 0; 
@@ -17,6 +42,17 @@ ul li {
     background-repeat: no-repeat;
     background-position: 10px 4px;
 }
+.menu ul li {
+    background-image: none;
+    font-family: Aino-headline;
+    font-size: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.menu ul li a {
+    color: black;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Aino-headline';
 }
@@ -35,10 +71,29 @@ h2{
 .paremal{
     float: right;
     max-width: 950px;
-    min-width: 200px;
+    min-width: 80px;
     display: block;
     position: relative;
     font-size: 17px;
+
+}
+.ccmsContent {
+    padding-left: 20px;
+}
+
+@media all and (max-width: 1240px) {
+    .paremal {
+        float: none;
+        max-width: 100%;
+    }
+    .rida {
+        float: none;
+        margin: 0 auto;
+        padding-top: 50px;
+        position: absolute;
+        left: 35%;
+        margin-right: -50%;
+    }
 
 }
 
@@ -73,7 +128,7 @@ h2{
 .main {
     overflow: hidden;
     max-width: 1250px;
-    min-width: 800px;
+    min-width: 400px;
     margin: 0px auto;
     height: 100%;
     background-color: rgba(255,255,255,0.92);
@@ -137,7 +192,7 @@ body{
 .rida{
     font-family: 'Aino-regular';
     float: left;
-    width: 270px;
+    width: 240px;
     padding-left: 30px;
     padding-bottom: 20px;
     font-size: 17px;
@@ -160,4 +215,69 @@ body{
 @font-face {
     font-family: 'Aino-headline';
     src: url("Aino-Headline.woff2") format('woff2');
+}
+
+
+.pispilt1 {
+    background: url("pisipilt2_1.gif") no-repeat center center;
+    background-size: cover;
+}
+
+.pispilt2 {
+    background: url("pisipilt2_2.gif") no-repeat center center;
+    background-size: cover;
+}
+.pispilt3 {
+    background: url("pisipilt2_3.gif") no-repeat center center;
+    background-size: cover;
+}
+.pispilt4 {
+    background: url("pisipilt2_4.gif") no-repeat center center;
+    background-size: cover;
+}
+.pispilt1:hover {
+    background: url("pisipilt3_1.gif") no-repeat center center;
+    background-size: cover;
+}
+.pispilt2:hover {
+    background: url("pisipilt3_2.gif") no-repeat center center;
+    background-size: cover;
+}
+.pispilt3:hover {
+    background: url("pisipilt3_3.gif") no-repeat center center;
+    background-size: cover;}
+.pispilt4:hover {
+     background: url("pisipilt3_4.gif") no-repeat center center;
+    background-size: cover; }
+
+.button {
+    font-size: 45px;
+    font-family: Aino-headline;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    min-width: 500px;
+}
+.button:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+    transform: translate(0px, -10px) scale(1.2);
+    color: black;
+}
+@media (max-width: 1250px) {
+    .button {
+        margin-left: 30px;
+    }
+
+    .button:hover{
+    -webkit-transform: translate(0px, -10px) scale(1.1);
+    transform: translate(0px, -10px) scale(1.1);
+    }
 }
