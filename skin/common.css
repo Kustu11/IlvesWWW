@@ -6,6 +6,10 @@
 .menu {
     /*padding-top: 100px;*/
 }
+.tabeli_korval {
+    padding-left: 15px;
+
+}
 .algusmenu {
     display: grid;
     grid-template-columns: 1fr;
@@ -29,6 +33,12 @@ a {
     color: black;
 }
 
+th, td {
+padding-left: 10px;
+padding-right: 10px;
+
+}
+
 ul {
     margin-left: 0; 
     padding-left: 0; 
@@ -42,6 +52,11 @@ ul li {
     background-repeat: no-repeat;
     background-position: 10px 4px;
 }
+
+.basic {
+    background-image: none;
+}
+
 .menu ul li {
     background-image: none;
     font-family: Aino-headline;
@@ -76,6 +91,9 @@ h2{
     position: relative;
     font-size: 17px;
 
+}
+.tabel_parem {
+    float:right;
 }
 .ccmsContent {
     padding-left: 20px;
