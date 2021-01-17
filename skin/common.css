@@ -253,20 +253,6 @@ body{
     background: url("pisipilt2_4.gif") no-repeat center center;
     background-size: cover;
 }
-.pispilt1:hover {
-    background: url("pisipilt3_1.gif") no-repeat center center;
-    background-size: cover;
-}
-.pispilt2:hover {
-    background: url("pisipilt3_2.gif") no-repeat center center;
-    background-size: cover;
-}
-.pispilt3:hover {
-    background: url("pisipilt3_3.gif") no-repeat center center;
-    background-size: cover;}
-.pispilt4:hover {
-     background: url("pisipilt3_4.gif") no-repeat center center;
-    background-size: cover; }
 
 .button {
     font-size: 45px;
@@ -284,7 +270,7 @@ body{
     min-width: 500px;
 }
 .button:hover {
-    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2), inset 0px 0px 100px 100px rgba(255,255,255,0.5);
     -webkit-transform: translate(0px, -10px) scale(1.2);
     transform: translate(0px, -10px) scale(1.2);
     color: black;
