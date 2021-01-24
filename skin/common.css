@@ -20,7 +20,9 @@
     /*padding-top: 100px;*/
 }
 .tabeli_korval {
+    float: left;
     padding-left: 15px;
+    display: block;
 
 }
 .algusmenu {
@@ -107,6 +109,10 @@ h2{
 }
 .tabel_parem {
     float:right;
+    overflow: auto;
+    padding-right: 150px;
+    padding-top: 150px;
+
 }
 .ccmsContent {
     padding-left: 20px;
@@ -175,6 +181,10 @@ h2{
     float: left;
 
 }
+/*.tabel_ilves table,th,td{
+    border: 1px solid black;
+}*/
+
 .my-md-5 {
     margin-top: 0!important;
     padding-top: 10px!important;
@@ -321,6 +331,7 @@ body{
     .tabel_parem {
         float: left;
         padding-left: 15px;
+        padding-top: 0px;
     }
     .tabeli_korval {
         float: left;
