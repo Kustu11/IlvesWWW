@@ -3,7 +3,8 @@
     font-size: medium;
     color: #d2d2d2;
 }
-.rida{
+
+.rida {
     font-family: 'Aino-regular';
     float: left;
     width: 240px;
@@ -12,19 +13,21 @@
     font-size: 17px;
 
     display: block;
-    position: relative;}
+    position: relative;
+}
+
 .rida h1 {
     font-size: 32px;
 }
-.menu {
-    /*padding-top: 100px;*/
-}
+
+
 .tabeli_korval {
     float: left;
     padding-left: 15px;
     display: block;
 
 }
+
 .algusmenu {
     display: grid;
     grid-template-columns: 1fr;
@@ -33,13 +36,7 @@
 }
 
 
-@media all and  (max-width: 1210px) {
-    .menu {
-        padding-top: 50px;
-        margin-right: 0;
-        max-width: 0;
-    }
-}
+
 *, ::after, ::before {
     box-sizing: unset;
 }
@@ -49,16 +46,17 @@ a {
 }
 
 th, td {
-padding-left: 10px;
-padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
 ul {
-    margin-left: 0; 
-    padding-left: 0; 
+    margin-left: 0;
+    padding-left: 0;
     list-style: none;
 }
+
 ul li {
     padding-left: 40px;
     padding-bottom: 5px;
@@ -79,65 +77,63 @@ ul li {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 .menu ul li a {
     color: black;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Aino-headline';
 }
-h2{
+
+h2 {
     font-size: 42px;
 }
-.footer{
-	padding: 0px;
-	width: 100%;
-	background-color: white;
+
+.footer {
+    padding: 0px;
+    width: 100%;
+    background-color: white;
     position: fixed;
     left: 0;
-	bottom: 0;
-	text-align: center;
+    bottom: 0;
+    text-align: center;
 }
-.paremal{
+
+.paremal {
     float: right;
-    max-width: 950px;
+    max-width: 1100px;
     min-width: 80px;
     display: block;
     position: relative;
     font-size: 17px;
 
 }
-.tabel_parem {
-    float:right;
+
+.tabel_keskel {
+    float: right;
     overflow: auto;
     padding-right: 150px;
     padding-top: 150px;
+}
+
+.fb-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tabel_parem {
+    float: right;
+    overflow: auto;
+    padding-top: 150px;
+    padding-right: 20px;
 
 }
+
 .ccmsContent {
     padding-left: 20px;
 }
 
-@media all and (max-width: 1240px) {
-    .paremal {
-        float: none;
-        max-width: 100%;
-    }
-    .rida {
-        margin: 0 auto;
-        padding-top: 50px;
-        width: 600px;
-    }
-    .rida h1 {
-        font-size: 53px;
-    }
-    .events {
-        font-size: 40px;
-        width: 600px;
-    }
-
-
-}
 
 .top_nav {
     overflow: hidden;
@@ -152,13 +148,16 @@ h2{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
-    }
+}
+
 .top_nav a:hover {
     color: orange;
-    }
+}
+
 .top_nav a.active {
-    color:rgb(190, 143, 40);
-    }
+    color: rgb(190, 143, 40);
+}
+
 .logo {
     float: left;
 
@@ -166,9 +165,14 @@ h2{
     width: 470px;
     background-image: url("ilves_logo.png");
 }
+
 .logo_umbris {
     padding-right: 30px;
     padding-left: 25px;
+}
+
+.dropdown-item {
+    width: 90%;
 }
 
 .content_footer {
@@ -177,17 +181,22 @@ h2{
     overflow: hidden;
     padding-left: 20px;
     padding-right: 20px;
-
     float: left;
 
 }
+
+.col-md {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 /*.tabel_ilves table,th,td{
     border: 1px solid black;
 }*/
 
 .my-md-5 {
-    margin-top: 0!important;
-    padding-top: 10px!important;
+    margin-top: 0 !important;
+    padding-top: 10px !important;
 }
 
 .main {
@@ -196,7 +205,7 @@ h2{
     min-width: 400px;
     margin: 0px auto;
     height: 100%;
-    background-color: rgba(255,255,255,0.92);
+    background-color: rgba(255, 255, 255, 0.92);
     border-width: 1px;
     border-color: rgb(0, 0, 0);
     border-style: solid;
@@ -205,8 +214,8 @@ h2{
     border-top-style: none;
 }
 
-body{
-    margin:0;
+body {
+    margin: 0;
     font-family: 'Aino-regular';
 }
 
@@ -222,7 +231,7 @@ body{
     padding-bottom: 100px;
 }
 
-.info_jalus{
+.info_jalus {
     display: block;
     position: relative;
     bottom: 0;
@@ -237,20 +246,11 @@ body{
     font-family: 'Aino-regular';
 }
 
-@media screen and (max-height:1080px){
-    .keha{
-        min-height: 88vh;
-    }
-}
 
-@media screen and (min-height:1090px) and (max-height:1440px){
-    .keha {
-        min-height: 92vh;
-    }
-}
 .menu {
     border: 300px;
 }
+
 .header {
     height: 100px;
 }
@@ -260,11 +260,13 @@ body{
     font-family: 'Aino-regular';
     src: url("Aino_31_170411-Regular.woff2") format('woff2');
 }
+
 @font-face {
     font-family: 'Aino-bold';
     src: url("Aino_31_170411-Bold.woff2") format('woff2');
     font-weight: bold;
 }
+
 @font-face {
     font-family: 'Aino-headline';
     src: url("Aino-Headline.woff2") format('woff2');
@@ -280,10 +282,12 @@ body{
     background: url("pisipilt2_2.gif") no-repeat center center;
     background-size: cover;
 }
+
 .pispilt3 {
     background: url("pisipilt2_3.gif") no-repeat center center;
     background-size: cover;
 }
+
 .pispilt4 {
     background: url("pisipilt2_4.gif") no-repeat center center;
     background-size: cover;
@@ -298,43 +302,266 @@ body{
     text-transform: uppercase;
     padding: 20px 30px;
     border-radius: 5px;
-    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     -webkit-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
     min-width: 500px;
 }
+
 .button:hover {
-    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2), inset 0px 0px 100px 100px rgba(255,255,255,0.5);
+    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2), inset 0px 0px 100px 100px rgba(255, 255, 255, 0.5);
     -webkit-transform: translate(0px, -10px) scale(1.2);
     transform: translate(0px, -10px) scale(1.2);
     color: black;
 }
-.rida a{
+
+.rida a {
     text-decoration: none;
 }
+
 .rida a:hover {
     color: black;
+}
+
+
+
+.list-unstyled li {
+    background-image: none;
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.info {
+    float: right;
+    padding-right: 5px;
+    position: relative;
+}
+
+.paremal {
+    width: 100%;
+    padding-left: 15px;
+    display: block;
+    float: right;
+    position: relative;
+    min-width: 635px;
+}
+
+.menu {
+    padding-top: 50px;
+}
+
+.klubist {
+    float: left;
+    width: 560px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.liikmed {
+    width: 540px;
+    float: left;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.info h2 {
+    font-size: 26px;
+}
+
+
+
+.jutuaken {
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.algusmenu {
+    position: relative;
+}
+
+
+.ajalugu {
+    padding-left: 15px;
+}
+
+.tstyle {
+    background-image: url(tstyle.png);
+}
+
+.kulka {
+    background-image: url(kulka_logo.jpg);
+}
+
+.tartu_linn {
+    background-image: url(tartu_logo.jpg);
+}
+
+.bigmenu {
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    padding-top: 40px;
+    min-width: 580px;
+
+}
+
+.sponsorgrid h2 {
+    padding-left: 15px
+}
+
+.sponsorid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem 2rem;
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+
+
+
+.sponsor {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 7rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sponsor:hover {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(-3deg);
+    background-color: whitesmoke;
+}
+
+@media all and  (max-width: 1210px) {
+    .menu {
+        padding-top: 150px;
+        margin-right: 0;
+        max-width: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .sponsorid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media screen and (max-height: 1080px) {
+    .keha {
+        min-height: 88vh;
+    }
+}
+
+@media screen and (min-height: 1090px) and (max-height: 1440px) {
+    .keha {
+        min-height: 92vh;
+    }
+}
+@media all and (max-width: 800px) {
+    .keha {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .logo {
+        order: 4;
+    }
+
+    .menu {
+        order: 2;
+    }
+
+    .paremal {
+        order: 3;
+    }
+
+    .rida {
+        order: 1;
+    }
+
 }
 @media (max-width: 1250px) {
     .button {
         margin-left: 30px;
     }
 
-    .button:hover{
-    -webkit-transform: translate(0px, -10px) scale(1.1);
-    transform: translate(0px, -10px) scale(1.1);
+    .button:hover {
+        -webkit-transform: translate(0px, -10px) scale(1.1);
+        transform: translate(0px, -10px) scale(1.1);
     }
 }
 
-@media (max-width: 950px) {
-    .tabel_parem {
+@media (max-width: 1240px) { /*1088*/
+
+
+    .tabel_parem, .tabel_keskel {
         float: left;
         padding-left: 15px;
         padding-top: 0px;
+
     }
+
     .tabeli_korval {
         float: left;
     }
 
+}
+
+@media all and (max-width: 1240px) {
+    .rida {
+        margin: 0 auto;
+        padding-top: 50px;
+        width: 800px;
+    }
+
+    .rida h1 {
+        font-size: 90px;
+    }
+
+    .events {
+        font-size: 60px;
+        width: 750px;
+    }
+
+    .paremal {
+        float: left;
+    }
+
+
+}
+
+@media (max-width: 1240px) {
+    .menu {
+        padding-top: 150px;
+    }
+
+    .klubist {
+        padding-left: 25px;
+    }
+
+}
+
+@media (max-width: 957px) {
+    .info {
+        left: -30%;
+    }
+
+    .klubist {
+        left: 10%;
+        padding-left: 25px;
+
+    }
 }

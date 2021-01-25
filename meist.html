@@ -6,12 +6,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <META name="description" content="Orienteerumisklubi Ilves koduleht - Orienteering Club ILVES homepage">
     <link rel="stylesheet" href="skin/common.css" type="text/css">
-    <link href="skin/meist_style.css" rel="stylesheet" type="text/css">
-    <link href="skin/avaleht_style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="skin/tahis_il.png">
     <TITLE>OK Ilves</TITLE>
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v9.0" nonce="lHHnsuZy"></script>
+
 <div class="keha">
     <div class="layer">
         <div class="main">
@@ -21,21 +22,21 @@
                     <a class="logo" href="index.html"></a>
                 </div>
                 <div class="menu">
-                    <nav class="navbar-expand-md navbar-light"> <!-- bg-light-->
+                    <nav class="navbar-expand-md navbar-light">
                         <div class="container-fluid container">
-                            <!--<a class="navbar-brand" href="#">Navbar</a>-->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">AVALEHT</a>
+                                        <a class="nav-link" href="index.html">AVALEHT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="paevakute_tulemused.html">PÄEVAKUD</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            VÕISTLUSED
-                                        </a>
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">VÕISTLUSED</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <li><a class="dropdown-item" href="ilves3.html">ILVES-3</a></li>
                                             <li><a class="dropdown-item" href="jurioo.html">JÜRIÖÖ JOOKS</a></li>
@@ -48,7 +49,7 @@
                                         <a class="nav-link" href="teenused.html">TEENUSED</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="meist.html">MEIST</a>
+                                        <a class="nav-link active" aria-current="page" href="meist.html">MEIST</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="ajalugu.html">ARHIIV</a>
@@ -58,7 +59,6 @@
                         </div>
                     </nav>
                 </div>
-
                 <!-- PÄISE LÕPP -->
 
                 <!-- ÜLDINFO ALGUS -->
@@ -161,6 +161,35 @@
                 </div>
             </div>
             <!-- KALENDRI LÕPP -->
+            <div class="content_footer">
+                <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <div class="fb-page" data-href="https://www.facebook.com/okilves" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/okilves" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/okilves">Orienteerumisklubi Ilves</a></blockquote></div>                            </div>
+                        <div class="col-6 col-md">
+                            <h5>Vaata lisaks</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="text-muted" href="paevakute_tulemused.html">Orienteerumispäevakud</a></li>
+                                <li><a class="text-muted" href="ilves3.html">Ilves-3</a></li>
+                                <li><a class="text-muted" href="meist.html">Orienteerumisklubi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md">
+                            <h5>Kontaktid</h5>
+                            <ul class="list-unstyled text-small">
+                                <li class="text-muted">+372 5342 0820</li>
+                                <li><a class="text-muted" href="mailto:info@okilves.ee">info(at)okilves.ee</a></li>
+                            </ul>
+
+                            <h5>Arveldusarve</h5>
+                            <ul class="list-unstyled text-small">
+                                <li class="text-muted">ORIENTEERUMISKLUBI ILVES</li>
+                                <li class="text-muted">IBAN EE302200001120086880</li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
 
         <!-- JALUSE ALGUS -->
