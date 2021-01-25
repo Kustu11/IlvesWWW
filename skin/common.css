@@ -102,7 +102,7 @@ h2 {
 
 .paremal {
     float: right;
-    max-width: 1100px;
+    max-width: 960px;
     min-width: 80px;
     display: block;
     position: relative;
@@ -190,9 +190,6 @@ h2 {
     padding-left: 20px;
 }
 
-/*.tabel_ilves table,th,td{
-    border: 1px solid black;
-}*/
 
 .my-md-5 {
     margin-top: 0 !important;
@@ -343,6 +340,7 @@ body {
     float: right;
     padding-right: 5px;
     position: relative;
+    padding-left: 30px;
 }
 
 .paremal {
@@ -361,6 +359,8 @@ body {
 .klubist {
     float: left;
     width: 560px;
+    padding-left: 30px;
+
     padding-bottom: 15px;
     position: relative;
 }
@@ -426,7 +426,6 @@ body {
     padding-left: 15px;
     padding-bottom: 50px;
 }
-
 
 
 .sponsor {
@@ -525,6 +524,10 @@ body {
         margin: 0 auto;
         padding-top: 50px;
         width: 800px;
+    }
+    .paremal {
+        width: 100%;
+        max-width: 1240px;
     }
 
     .rida h1 {
